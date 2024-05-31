@@ -29,17 +29,17 @@ export const AuthGuard = (props) => {
       }
 
       ignore.current = true;
-      // const isAuthenticatedValue = getAuth();
-      // if (!isAuthenticatedValue) {
-      //   router
-      //     .replace({
-      //       pathname: '/sign-in',
-      //       query: router.asPath !== '/' ? { continueUrl: router.asPath } : undefined
-      //     })
-      //     .catch(console.error);
-      // } else {
-      //   setChecked(true);
-      // }
+      const isAuthenticatedValue = getAuth();
+      if (!isAuthenticatedValue) {
+        router
+          .replace({
+            pathname: '/sign-in',
+            query: router.asPath !== '/' ? { continueUrl: router.asPath } : undefined
+          })
+          .catch(console.error);
+      } else {
+        setChecked(true);
+      }
       setChecked(true);
     },
     [router.isReady]

@@ -20,6 +20,7 @@ import Router from "next/router";
 import { setAuth, setUserMobile } from "../../service/identity.service";
 import { getProfileData } from "../../service/account.service";
 import { Counter } from "../../components/counter/counter";
+import profileData from '../../data/profile.json';
 
 const Page = () => {
   const [otpField, setOptField] = useState(false);
@@ -34,14 +35,11 @@ const Page = () => {
   const theme = useTheme();
   const inputRef = useRef(null);
   const baseUrl = process.env.NEXT_PUBLIC_API_URL;
-  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
+ const  token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
 
   const bindProfileData = async () => {
-    fetch('/api/profile')
-    .then((response) => response.json())
-    .then((data) =>  {
+   const data = profileData;
     authContext.updateProfile(data?.results);
-    })
   };
 
   const handleChange = (newValue) => {

@@ -47,6 +47,7 @@ import { LinearStepper } from "../../../components/stepper-tab/stepper-tab";
 import { TemplateEmailVerify } from "../../../components/account/template-email-verify";
 import { DocumentsAddProperty } from "../../../components/account/documents-add-property";
 import handler from "../../api/country";
+import propertyData from '../../data/property.json';
 
 export const Page = (props) => {
   const [facilityContent, setFacilityContent] = useState([]);
@@ -136,12 +137,9 @@ export const Page = (props) => {
   };
 
   const bindAddProperty = async () => {
-    const data = await getAddProperty();
-    fetch("/api/property")
-    .then((response) => response.json())
-    .then((data) => {
+    // const data = await getAddProperty();
+    const data = propertyData;
     setAddProperty(data?.results);
-    })
   };
 
   const handlestatewithcountryid = useCallback(async (id) => {

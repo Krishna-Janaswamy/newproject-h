@@ -17,6 +17,7 @@ import { ToastBar } from "../components/toast-bar/toast-bar";
 import Slide from "@mui/material/Slide";
 import { ProfileImagePreview } from "../components/account/profile-image-preview";
 import { setProfileAuth } from "../service/identity.service";
+import profileDataStatic from '../data/profile.json'
 
 const Page = () => {
   const [profileData, setProfileData] = useState({});
@@ -31,13 +32,11 @@ const Page = () => {
 
   const bindProfileData = async () => {
     // const data = await getProfileData();
-    fetch('/api/profile')
-    .then((response) => response.json())
-    .then((data) =>  {
+   const data = profileDataStatic;
     setProfileData(data?.results);
     authContext.updateProfile(data?.results);
     setProfileAuth(data?.results)
-  })};
+  };
 
   // const bindGenderData = async () => {
   //   const data = await getGenderContent();

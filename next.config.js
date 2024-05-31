@@ -21,6 +21,7 @@ module.exports = () => {
   ];
 
   return plugins.reduce((acc, next) => next(acc), {
+    output: 'export',
     trailingSlash: true,
     reactStrictMode: true,
     webpack: (cfg, {isServer}) => {

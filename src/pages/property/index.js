@@ -12,6 +12,7 @@ import { deletePropertyId } from "../../service/property.services";
 import {getAddProperty} from '../../service/account.service';
 import { ToastBar } from "../../components/toast-bar/toast-bar";
 import { FilterComponent } from "../../components/filter-component/filter-component";
+import propertyData from '../../data/property.json';
 
 const Page = () => {
   const [listProperty, setListProperty] = useState([]);
@@ -50,10 +51,8 @@ const Page = () => {
   ];
 
   const bindAddProperty = async () => {
-    const data = await getAddProperty();
-    fetch("/api/property")
-    .then((response) => response.json())
-    .then((data) => {
+    // const data = await getAddProperty();
+   const data = await propertyData;
     setListProperty(data?.results);
     setFullProperty(data?.results);
     let value = [];
@@ -64,17 +63,14 @@ const Page = () => {
     const updatedValue = [...new Set(value)];
 
     setUniqueEmail(updatedValue);
-  })
   };
 
   const bindPrpertyApproveStatus = async () => {
-    const data = await getAddProperty();
-    fetch("/api/property")
-    .then((response) => response.json())
-    .then((data) => {
+    // const data = await getAddProperty();
+    const data = await propertyData;
+  
     setFullProperty(data?.results);
     filterBoth(lastFilterPropertyStatus, lastFilterByStatus, data?.results);
-    })
   };
 
   const handleDeleteAction = async (id) => {

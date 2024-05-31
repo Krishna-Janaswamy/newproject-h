@@ -9,19 +9,21 @@ import { handleRoleFlat, scopeMethod } from "../../utils/method";
 import profileData from '../../data/profile.json';
 
 const parseUrl = () => {
-  const token = getAuth();
+  // const token = getAuth();
+  const  token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
   return { token };
 };
 
-const Page = ({ profile }) => {
+const Page = () => {
   const authContext = useContext(AuthContext);
   const confirmed = useRef(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
+  const profile = profileData?.results
 
   setProfileAuth(profile);
   // const profileRole = handleRoleFlat(profile?.role);
-  const scopeOfRole = scopeMethod('admin');
+  const scopeOfRole = scopeMethod('SUPER_ADMIN');
   setRole(scopeOfRole);
 
   const confirm = async () => {
@@ -119,17 +121,17 @@ const Page = ({ profile }) => {
   return null;
 };
 
-Page.getInitialProps = async () => {
-  const token = getAuth();
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
-  const res = await fetch(`${baseUrl}/api/account/profile/`, {
-    method: "GET",
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  });
-  const json = await res.json();
-  return { profile: profileData };
-};
+// Page.getInitialProps = async () => {
+//   // const  token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
+//   // const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+//   // const res = await fetch(`${baseUrl}/api/account/profile/`, {
+//   //   method: "GET",
+//   //   headers: {
+//   //     Authorization: `Bearer ${token}`,
+//   //   },
+//   // });
+//   // const json = await res.json();
+//   return { profile: profileData };
+// };
 
 export default Page;

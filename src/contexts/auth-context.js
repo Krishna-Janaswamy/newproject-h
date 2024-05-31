@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { getProfileData } from '../service/account.service';
 import { getAuth, setProfileAuth, setRole } from '../service/identity.service';
 import { handleRoleFlat, scopeMethod } from '../utils/method';
+import profileDataList from '../data/profile.json'
 
 const HANDLERS = {
   INITIALIZE: 'INITIALIZE',
@@ -118,12 +119,10 @@ export const AuthProvider = (props) => {
       const isAuthenticated = getAuth();
 
       if (isAuthenticated) {
-        fetch("/api/profile")
-        .then((response) => response.json())
-        .then((data) => {
+        const data = await profileDataList;
         setProfileAuth(data?.results);
-        const profileRole = handleRoleFlat(data?.results?.role);
-        const scopeOfRole = scopeMethod(profileRole);
+        // const profileRole = handleRoleFlat(data?.results?.role);
+        const scopeOfRole = scopeMethod('SUPER_ADMIN');
         setRole(scopeOfRole);
         
         // Get user from your database
@@ -140,7 +139,6 @@ export const AuthProvider = (props) => {
           type: HANDLERS.UPDATEPROFILE,
           payload: data?.results
         });
-      })
       } else {
         dispatch({
           type: HANDLERS.INITIALIZE
