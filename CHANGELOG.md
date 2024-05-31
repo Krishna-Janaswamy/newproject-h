@@ -2,7 +2,7 @@
 
 ###### Sep 15, 2022
 
-- Integrate Zalter Authentication
+- Integrate ModuleAuthentication
 - Update dependencies
 
 ## V2.0.0
