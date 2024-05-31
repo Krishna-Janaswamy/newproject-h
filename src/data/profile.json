@@ -1,0 +1,104 @@
+{
+    "status": true,
+    "results": {
+        "id": 59,
+        "first_name": "Krishna",
+        "last_name": "Janaswamy",
+        "role": [
+            {
+                "id": 1,
+                "name": "User"
+            },
+            {
+                "id": 6,
+                "name": "Super Admin"
+            },
+            {
+                "id": 7,
+                "name": "Property Owner"
+            }
+        ],
+        "email": "krishna@gmail.com",
+        "mobile": "9493165539",
+        "page_count": 5,
+        "profile": {
+            "id": 30,
+            "created_date": "2023-03-23T12:31:56.539579+05:30",
+            "updated_date": "2023-11-16T23:25:29.252631+05:30",
+            "status": false,
+            "file_name": "/media/documents/myw3schoolsimage_GsYWSOW.jpg",
+            "user": 59
+        },
+        "profile_detail": {
+            "id": 43,
+            "created_date": "2023-03-21T21:10:24.202263+05:30",
+            "updated_date": "2023-12-20T15:57:14.231325+05:30",
+            "status": true,
+            "dob": "1997-07-09",
+            "lat": 30.2255503,
+            "long": -81.5059857,
+            "user": 59,
+            "gender": {
+                "id": 2,
+                "created_date": "2022-08-15T19:01:29.892140+05:30",
+                "updated_date": "2022-08-15T19:01:29.892173+05:30",
+                "status": true,
+                "name": "Male",
+                "image": null
+            },
+            "music": [
+                {
+                    "id": 6,
+                    "name": "Rock",
+                    "image": "documents/rock_qszvaJy.svg"
+                },
+                {
+                    "id": 7,
+                    "name": "Jazz",
+                    "image": "documents/Jazz.svg"
+                },
+                {
+                    "id": 9,
+                    "name": "Electro/Techno",
+                    "image": "documents/electrotechno.svg"
+                }
+            ],
+            "drink": [
+                {
+                    "id": 19,
+                    "name": "IMFL",
+                    "image": "documents/imfl.svg"
+                },
+                {
+                    "id": 15,
+                    "name": "Tequila",
+                    "image": "documents/tequilla.svg"
+                },
+                {
+                    "id": 8,
+                    "name": "Indian Beer",
+                    "image": "documents/indian_beer.svg"
+                }
+            ],
+            "bar": [
+                {
+                    "id": 2,
+                    "name": "Sports Bar",
+                    "image": "documents/sportsbar.svg"
+                },
+                {
+                    "id": 8,
+                    "name": "Lounge Bar",
+                    "image": "documents/loungebar.svg"
+                },
+                {
+                    "id": 11,
+                    "name": "Pubs",
+                    "image": "documents/pubs.svg"
+                }
+            ],
+            "gender_like_to_meet": [],
+            "profile_matching_for": []
+        }
+    }
+}

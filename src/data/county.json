@@ -1,0 +1,269 @@
+{
+    "status": true,
+    "results": [
+        {
+            "id": 4,
+            "created_date": "2022-12-19T17:01:59.833847+05:30",
+            "updated_date": "2022-12-19T17:01:59.833872+05:30",
+            "status": true,
+            "code": "AT",
+            "name": "Australia"
+        },
+        {
+            "id": 5,
+            "created_date": "2022-12-19T17:02:24.361672+05:30",
+            "updated_date": "2022-12-19T17:02:24.361701+05:30",
+            "status": true,
+            "code": "BR",
+            "name": "Brazil"
+        },
+        {
+            "id": 7,
+            "created_date": "2022-12-19T17:02:59.006073+05:30",
+            "updated_date": "2022-12-19T17:02:59.006093+05:30",
+            "status": true,
+            "code": "CA",
+            "name": "Canada"
+        },
+        {
+            "id": 6,
+            "created_date": "2022-12-19T17:02:37.527616+05:30",
+            "updated_date": "2022-12-19T17:02:37.527637+05:30",
+            "status": true,
+            "code": "CN",
+            "name": "China"
+        },
+        {
+            "id": 8,
+            "created_date": "2022-12-19T17:03:18.062261+05:30",
+            "updated_date": "2022-12-19T17:03:18.062283+05:30",
+            "status": true,
+            "code": "CR",
+            "name": "Costa Rica"
+        },
+        {
+            "id": 9,
+            "created_date": "2022-12-19T17:03:32.770517+05:30",
+            "updated_date": "2022-12-19T17:03:32.770539+05:30",
+            "status": true,
+            "code": "DK",
+            "name": "Denmark"
+        },
+        {
+            "id": 10,
+            "created_date": "2022-12-19T17:03:47.647181+05:30",
+            "updated_date": "2022-12-19T17:03:47.647199+05:30",
+            "status": true,
+            "code": "EG",
+            "name": "Egypt"
+        },
+        {
+            "id": 11,
+            "created_date": "2022-12-19T17:03:59.658916+05:30",
+            "updated_date": "2022-12-19T17:03:59.658935+05:30",
+            "status": true,
+            "code": "FR",
+            "name": "France"
+        },
+        {
+            "id": 12,
+            "created_date": "2022-12-19T17:04:24.609103+05:30",
+            "updated_date": "2022-12-19T17:04:24.609124+05:30",
+            "status": true,
+            "code": "DE",
+            "name": "Germany"
+        },
+        {
+            "id": 13,
+            "created_date": "2022-12-19T17:04:33.213503+05:30",
+            "updated_date": "2022-12-19T17:04:33.213521+05:30",
+            "status": true,
+            "code": "GR",
+            "name": "Greece"
+        },
+        {
+            "id": 14,
+            "created_date": "2022-12-19T17:04:53.516945+05:30",
+            "updated_date": "2022-12-19T17:04:53.516972+05:30",
+            "status": true,
+            "code": "HU",
+            "name": "Hungary"
+        },
+        {
+            "id": 1,
+            "created_date": "2022-11-19T23:48:10.351929+05:30",
+            "updated_date": "2022-12-19T17:00:20.139255+05:30",
+            "status": true,
+            "code": "IN",
+            "name": "India"
+        },
+        {
+            "id": 15,
+            "created_date": "2022-12-19T17:04:59.609102+05:30",
+            "updated_date": "2022-12-19T17:04:59.609123+05:30",
+            "status": true,
+            "code": "IE",
+            "name": "Ireland"
+        },
+        {
+            "id": 16,
+            "created_date": "2022-12-19T17:05:12.242840+05:30",
+            "updated_date": "2022-12-19T17:05:12.242859+05:30",
+            "status": true,
+            "code": "IL",
+            "name": "Israel"
+        },
+        {
+            "id": 17,
+            "created_date": "2022-12-19T17:05:24.697586+05:30",
+            "updated_date": "2022-12-19T17:05:24.697605+05:30",
+            "status": true,
+            "code": "JP",
+            "name": "Japan"
+        },
+        {
+            "id": 18,
+            "created_date": "2022-12-19T17:05:41.782979+05:30",
+            "updated_date": "2022-12-19T17:05:41.783001+05:30",
+            "status": true,
+            "code": "KW",
+            "name": "Kuwait"
+        },
+        {
+            "id": 19,
+            "created_date": "2022-12-19T17:06:09.497083+05:30",
+            "updated_date": "2022-12-19T17:06:09.497107+05:30",
+            "status": true,
+            "code": "LU",
+            "name": "Luxembourg"
+        },
+        {
+            "id": 20,
+            "created_date": "2022-12-19T17:06:29.385770+05:30",
+            "updated_date": "2022-12-19T17:06:29.385794+05:30",
+            "status": true,
+            "code": "MV",
+            "name": "Maldives"
+        },
+        {
+            "id": 21,
+            "created_date": "2022-12-19T17:06:44.941061+05:30",
+            "updated_date": "2022-12-19T17:06:44.941089+05:30",
+            "status": true,
+            "code": "MU",
+            "name": "Mauritius"
+        },
+        {
+            "id": 22,
+            "created_date": "2022-12-19T17:06:58.004871+05:30",
+            "updated_date": "2022-12-19T17:06:58.004896+05:30",
+            "status": true,
+            "code": "MX",
+            "name": "Mexico"
+        },
+        {
+            "id": 23,
+            "created_date": "2022-12-19T17:07:24.357656+05:30",
+            "updated_date": "2022-12-19T17:07:24.357676+05:30",
+            "status": true,
+            "code": "MC",
+            "name": "Monaco"
+        },
+        {
+            "id": 24,
+            "created_date": "2022-12-19T17:07:56.353359+05:30",
+            "updated_date": "2022-12-19T17:07:56.353380+05:30",
+            "status": true,
+            "code": "NZ",
+            "name": "New Zealand"
+        },
+        {
+            "id": 33,
+            "created_date": "2022-12-19T17:11:47.940112+05:30",
+            "updated_date": "2022-12-19T17:11:47.940136+05:30",
+            "status": true,
+            "code": "SC",
+            "name": "Seychelles"
+        },
+        {
+            "id": 29,
+            "created_date": "2022-12-19T17:10:19.869153+05:30",
+            "updated_date": "2022-12-19T17:10:19.869171+05:30",
+            "status": true,
+            "code": "SG",
+            "name": "Singapore"
+        },
+        {
+            "id": 27,
+            "created_date": "2022-12-19T17:08:51.088841+05:30",
+            "updated_date": "2022-12-19T17:08:51.088862+05:30",
+            "status": true,
+            "code": "ZA",
+            "name": "South Africa"
+        },
+        {
+            "id": 26,
+            "created_date": "2022-12-19T17:08:38.281284+05:30",
+            "updated_date": "2022-12-19T17:08:38.281307+05:30",
+            "status": true,
+            "code": "ES",
+            "name": "Spain"
+        },
+        {
+            "id": 28,
+            "created_date": "2022-12-19T17:09:04.893254+05:30",
+            "updated_date": "2022-12-19T17:09:04.893272+05:30",
+            "status": true,
+            "code": "SE",
+            "name": "Sweden"
+        },
+        {
+            "id": 25,
+            "created_date": "2022-12-19T17:08:31.149340+05:30",
+            "updated_date": "2022-12-19T17:08:31.149362+05:30",
+            "status": true,
+            "code": "CH",
+            "name": "Switzerland"
+        },
+        {
+            "id": 31,
+            "created_date": "2022-12-19T17:10:58.809016+05:30",
+            "updated_date": "2022-12-19T17:10:58.809039+05:30",
+            "status": true,
+            "code": "TW",
+            "name": "Taiwan"
+        },
+        {
+            "id": 30,
+            "created_date": "2022-12-19T17:10:45.349528+05:30",
+            "updated_date": "2022-12-19T17:10:45.349548+05:30",
+            "status": true,
+            "code": "TH",
+            "name": "Thailand"
+        },
+        {
+            "id": 32,
+            "created_date": "2022-12-19T17:11:19.818153+05:30",
+            "updated_date": "2022-12-19T17:11:19.818172+05:30",
+            "status": true,
+            "code": "AE",
+            "name": "United Arab Emirates"
+        },
+        {
+            "id": 3,
+            "created_date": "2022-12-19T17:00:48.502506+05:30",
+            "updated_date": "2022-12-19T17:00:48.502524+05:30",
+            "status": true,
+            "code": "UK",
+            "name": "United Kingdom"
+        },
+        {
+            "id": 2,
+            "created_date": "2022-12-19T17:00:39.845898+05:30",
+            "updated_date": "2022-12-19T17:00:39.845921+05:30",
+            "status": true,
+            "code": "US",
+            "name": "United States"
+        }
+    ]
+}
