@@ -46,8 +46,8 @@ import { FacilitiesAddProperty } from "../../../components/account/facilities-ad
 import { LinearStepper } from "../../../components/stepper-tab/stepper-tab";
 import { TemplateEmailVerify } from "../../../components/account/template-email-verify";
 import { DocumentsAddProperty } from "../../../components/account/documents-add-property";
-import handler from "../../api/country";
-import propertyData from '../../data/property.json';
+// import handler from "../../api/country";
+import propertyData from '../../../data/property.json';
 
 export const Page = (props) => {
   const [facilityContent, setFacilityContent] = useState([]);
