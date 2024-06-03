@@ -1,6 +1,6 @@
-import { Auth } from '@module/identity-js';
+// import { Auth } from '@module/identity-js';
 
-const noop = () => {};
+// const noop = () => {};
 
 // export const ENABLE_AUTH = process.env.NEXT_PUBLIC_ENABLE_MODULE_AUTH === 'true';
 

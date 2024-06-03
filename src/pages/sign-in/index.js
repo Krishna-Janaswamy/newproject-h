@@ -38,8 +38,7 @@ const Page = () => {
  const  token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
 
   const bindProfileData = async () => {
-   const data = profileData;
-    authContext.updateProfile(data?.results);
+    authContext.updateProfile(profileData?.results);
   };
 
   const handleChange = (newValue) => {
@@ -93,17 +92,17 @@ const Page = () => {
 
       if (otp) {
         const verifyOtp = async () => {
-          const response = await fetch(`${baseUrl}/api/account/verify/`, {
-            method: "POST",
-            body: JSON.stringify({
-              mobile: formik.values.mobile,
-              session_id: otpField.session_id,
-              otp: otp,
-            }),
-            headers: {
-              "Content-Type": "application/json",
-            },
-          });
+          // const response = await fetch(`${baseUrl}/api/account/verify/`, {
+          //   method: "POST",
+          //   body: JSON.stringify({
+          //     mobile: formik.values.mobile,
+          //     session_id: otpField.session_id,
+          //     otp: otp,
+          //   }),
+          //   headers: {
+          //     "Content-Type": "application/json",
+          //   },
+          // });
           // const data = await response.json();
           const data = {
             status: true

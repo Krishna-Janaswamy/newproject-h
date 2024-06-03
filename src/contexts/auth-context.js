@@ -116,12 +116,12 @@ export const AuthProvider = (props) => {
 
     try {
       // Check if user is authenticated
-      const isAuthenticated = getAuth();
+      let isAuthenticated = getAuth();
+      isAuthenticated = true
 
       if (isAuthenticated) {
-        const data = await profileDataList;
-        setProfileAuth(data?.results);
-        // const profileRole = handleRoleFlat(data?.results?.role);
+        setProfileAuth(profileDataList?.results);
+        const profileRole = handleRoleFlat(profileDataList?.role);
         const scopeOfRole = scopeMethod('SUPER_ADMIN');
         setRole(scopeOfRole);
         
@@ -131,13 +131,13 @@ export const AuthProvider = (props) => {
           type: HANDLERS.INITIALIZE,
           payload: {
             user,
-            profile: data?.results,
+            profile: profileDataList?.results,
             role: scopeOfRole
           }
         });
         dispatch({
           type: HANDLERS.UPDATEPROFILE,
-          payload: data?.results
+          payload: profileDataList?.results
         });
       } else {
         dispatch({
