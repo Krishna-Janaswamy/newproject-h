@@ -22,7 +22,7 @@ export const DashboardLayout = (props) => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
 
   return (
-    <AuthGuard>
+    // <AuthGuard>
       <WithAuth>
         <DashboardLayoutRoot>
           <Box
@@ -39,6 +39,6 @@ export const DashboardLayout = (props) => {
         <DashboardNavbar onSidebarOpen={() => setSidebarOpen(true)} />
         <DashboardSidebar onClose={() => setSidebarOpen(false)} open={isSidebarOpen} />
       </WithAuth>
-    </AuthGuard>
+    // </AuthGuard>
   );
 };
